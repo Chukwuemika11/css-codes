@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Styling Example</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for button */
+    .btn-primary {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.375rem; /* 6px */
+      background-color: #4a90e2; /* Primary color */
+      color: #ffffff; /* Text color */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      /* Tailwind CSS utilities */
+      @apply inline-block px-6 py-3 text-sm font-semibold text-white bg-blue-500 rounded hover:bg-blue-600;
+    }
+
+    /* Hover effect */
+    .btn-primary:hover {
+      background-color: #357dbf; /* Darker shade on hover */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+  <button class="btn-primary">Click Me</button>
+
+</body>
+</html>
